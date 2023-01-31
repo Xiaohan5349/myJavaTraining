@@ -1,13 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/../am-external/openam-auth-trees/auth-tree-node-archetype/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="openam-auth-hotp" />
+        <module name="openam-auth-oath" />
+        <module name="openam-auth-jwt-pop" />
+        <module name="openam-auth-adaptive" />
+        <module name="openam-auth-fr-oath" />
+        <module name="openam-auth-device-id" />
+        <module name="jwt-bearer-client" />
+        <module name="openam-auth-ad" />
+        <module name="openam-auth-accountactivecheck" />
+        <module name="sample-trees" />
+        <module name="openam-auth-membership" />
+        <module name="testNode" />
+        <module name="openam-auth-jdbc" />
         <module name="myThirdProject" />
+        <module name="openam-auth-windowsdesktopsso" />
+        <module name="openam-radius-common" />
+        <module name="custom-authentication-module" />
+        <module name="openam-auth-anonymous" />
+        <module name="openam-example-api-descriptor" />
+        <module name="openam-auth-httpbasic" />
+        <module name="openam-push-notification" />
+        <module name="openam-auth-scripted" />
+        <module name="auth-node-api" />
+        <module name="openam-auth-ldap" />
+        <module name="openam-scope-sample" />
+        <module name="policy-evaluation-plugin" />
+        <module name="openam-post-auth-sample" />
+        <module name="openam-auth-persistentcookie" />
+        <module name="openam-auth-nt" />
+        <module name="openam-auth-msisdn" />
+        <module name="openam-auth-radius" />
+        <module name="openam-radius-server" />
+        <module name="openam-auth-application" />
+        <module name="openam-auth-oauth2" />
+        <module name="openam-auth-social" />
+        <module name="quotaexhaustionaction" />
+        <module name="openam-auth-oidc" />
+        <module name="openam-datastore" />
+        <module name="openam-radius-cli" />
+        <module name="openam-auth-amster" />
+        <module name="auth-tree-node-archetype" />
+        <module name="openam-auth-datastore" />
+        <module name="openam-auth-common" />
+        <module name="auth-nodes" />
+        <module name="openam-auth-cert" />
+        <module name="openam-auth-push" />
+        <module name="openam-auth-saml2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="openam-ui-admin" target="11" />
+      <module name="openam-ui-api" target="11" />
+      <module name="openam-ui-user" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="auth-node-api" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="auth-nodes" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="auth-tree-node-archetype" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="custom-authentication-module" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="jwt-bearer-client" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-accountactivecheck" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-ad" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-adaptive" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-amster" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-anonymous" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-application" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-cert" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-common" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-datastore" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-device-id" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-fr-oath" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-hotp" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-httpbasic" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-jdbc" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-jwt-pop" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-ldap" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-membership" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-msisdn" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-nt" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-oath" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-oauth2" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-oidc" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-persistentcookie" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-push" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-radius" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-saml2" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-scripted" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-social" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-auth-windowsdesktopsso" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-datastore" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-example-api-descriptor" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-post-auth-sample" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-push-notification" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-radius-cli" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-radius-common" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-radius-server" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-scope-sample" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="openam-ui-api" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="policy-evaluation-plugin" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="quotaexhaustionaction" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+      <module name="sample-trees" options="-Xlint:all --add-exports java.base/sun.security.util=ALL-UNNAMED --add-exports java.base/sun.security.x509=ALL-UNNAMED -Xpkginfo:always" />
+    </option>
   </component>
 </project>
